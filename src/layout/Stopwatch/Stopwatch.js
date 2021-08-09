@@ -19,7 +19,7 @@ const Stopwatch = () => {
             )
             .subscribe(() => {
                 if (on) {
-                    setTime(prevTime => prevTime + 1);
+                    setTime(prevTime => prevTime + 10);
                 }
             });
 
@@ -58,9 +58,9 @@ const Stopwatch = () => {
                 </div>
                 <div>
                     <h1>
-                        <span>{("0" + Math.floor((time / 360000) % 24)).slice(-2)}:</span>
-                        <span>{("0" + Math.floor((time / 6000) % 60)).slice(-2)}:</span>
-                        <span>{("0" + Math.floor((time / 100) % 60)).slice(-2)}</span>
+                        <span>{("0" + Math.floor((time / 3600000) % 24)).slice(-2)}:</span>
+                        <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
+                        <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}</span>
                     </h1>
                 </div>
                 <div className="buttons">
