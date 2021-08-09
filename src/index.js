@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Stopwatch from "./layout/Stopwatch/Stopwatch";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Stopwatch />
   </React.StrictMode>,
   document.getElementById('root')
 );
